@@ -90,6 +90,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &-link{
+            &:hover{
+                svg path{
+                    fill: #fff;
+                }
+            }
+        }
     }
     &__overlay{
         position: fixed;

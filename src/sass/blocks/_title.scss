@@ -12,8 +12,25 @@
     }
     &_fz14{
         font-size: 14px;
+        line-height: 20px;
     }
     &_fz20{
         font-size: 20px;
+        line-height: 30px;
+    }
+    &__section{
+        &-title{
+            position: relative;
+            text-align: center;
+            @include before_circle;
+            &:before{
+                transform: translateY(-50%);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &-subtitle{
+            text-align: center;
+        }
     }
 }
