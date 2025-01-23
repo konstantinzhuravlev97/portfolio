@@ -3,10 +3,11 @@
     &__wrapper{
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, 350px);
         grid-template-rows: repeat(3, minmax(45px, auto));
         grid-auto-rows: 45px;
-        gap: 15px 300px;
+        row-gap: 15px;
+        justify-content: space-between;
     }
     &__item{
         padding-left: 25px;

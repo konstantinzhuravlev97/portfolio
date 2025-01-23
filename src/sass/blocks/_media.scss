@@ -1,0 +1,240 @@
+@media (max-width: 1439px){
+    .sidepanel{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .about{
+        &__wrapper{
+            grid-template-columns: 400px auto;
+            gap: 25px;
+        }
+        &__info{
+            width: 200;
+        }
+        &__skills{
+            gap: 15px;
+        }
+    }
+    .resume{
+        &__wrapper{
+            column-gap: 100px;
+        }
+    }
+    .skills{
+        &__wrapper{
+            row-gap: 50px;
+        }
+    }
+    .portfolio{
+        &__wrapper{
+            row-gap: 35px;
+        }
+        &__link{
+            &-plans{
+                grid-column: unset;
+                grid-row: unset;
+            }
+            &-mac{
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
+    }
+    .contacts{
+        &__wrapper{
+            grid-template-columns: 400px 535px;
+            column-gap: 25px;
+        }
+        &__form{
+            grid-template-columns: repeat(2, 260px);
+            column-gap: 15px;
+        }
+    }
+
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+    .about{
+        margin-top: 80px;
+        &__wrapper{
+            grid-template-columns: 340px 360px;
+            column-gap: 20px;    
+        }
+        &__title{
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__text{
+            font-size: 12px;
+        }
+    }
+    .resume, .skills, .skills__percent, .portfolio, .price{
+        margin-top: 80px;
+    }
+    .contacts{
+        margin-top: 80px;
+        &__wrapper{
+            grid-template-columns: 340px 360px;
+            column-gap: 20px;
+        }
+        &__title{
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__form{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 45px) 185px 90px;
+            gap: 25px;
+        }
+        &__textarea{
+            grid-column: unset;
+        }
+        &__triggers{
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            grid-template-rows: 35px 45px;
+            row-gap: 10px;
+        }
+        &__btn{
+            grid-row-start: 2;
+            margin: 0 auto;
+            max-width: 220px;
+            max-height: 100%;
+        }
+        &__policy{
+            grid-row-start: 1;
+            justify-content: center;
+
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+    .title{
+        &_fz48{
+            font-size: 28px;
+        }
+    }
+    .promo{
+        &__title{
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    .about{
+        margin-top: 60px;
+        &__wrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px auto auto;
+        }
+        &__photo{
+            grid-row: unset;
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+    .resume{
+        margin-top: 60px;
+    }
+    .skills{
+        margin-top: 60px;
+        &__wrapper{
+            grid-template-columns: 270px;
+            row-gap: 20px;
+            justify-content: center;
+        }
+        &__percent{
+            margin-top: 60px;
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+    }
+    .portfolio{
+        margin-top: 60px;
+        &__wrapper{
+            row-gap: 20px;
+            justify-content: center;
+        }
+    }
+    .price{
+        margin-top: 60px;
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+    .contacts{
+        margin-top: 60px;
+        &__wrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+        &__photo {
+            display: none;
+        }
+        &__form{
+            grid-template-rows: repeat(2, 45px) 145px 90px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .title{
+        &_fz48{
+            font-size: 26px;
+        }
+    }
+    .title__section-subtitle{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .hamburger{
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            max-width: 250px;
+            padding-left: 20px;
+        }
+
+    }
+    .promo{
+        background: url('../images/background.jpg') 57%/cover no-repeat;
+        &__title{
+            width: 100%;
+        }
+        &__subtitle{
+            width: 100%;
+        }
+        &__btns{
+            margin-top: 32px;
+            width: 280px;
+        } 
+    }
+    .resume{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+    .contacts{
+        &__policy{
+            font-size: 10px;
+        }
+    }
+}

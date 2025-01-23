@@ -71,22 +71,22 @@
             <nav>
                 <ul class="menu__list">
                     <li class="menu__link">
-                        <a href="#">Про меня</a>
+                        <a href="#about">Про меня</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#" >Мой опыт</a>
+                        <a href="#resume" >Мой опыт</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#" >Мои навыки</a>
+                        <a href="#skills" >Мои навыки</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#" >Мои работы</a>
+                        <a href="#portfolio" >Мои работы</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#" >Прайс-лист</a>
+                        <a href="#price" >Прайс-лист</a>
                     </li>
                     <li class="menu__link">
-                        <a href="#" >Контакты</a>
+                        <a href="#contacts" >Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -124,7 +124,7 @@
         </div>
     </div>
 
-    <section class="promo">
+    <section id="promo" class="promo">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
@@ -134,7 +134,7 @@
             <div class="promo__subtitle title title_fz16">Меня зовут Константин</div>
             <h1 class="promo__title title title_fz48">Я web-разработчик из города Омск</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
+                <a href="#portfolio" class="promo__link btn">Портфолио</a>
                 <a href="#about" class="promo__link btn btn_clear">Про меня</a>
             </div>
         </div>
@@ -192,7 +192,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section id="resume" class="resume">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Опыт</h2>
             <div class="title title__section-subtitle">Чем я буду полезен</div>
@@ -246,7 +246,7 @@
                                     </div>
                                     <div>
                                         <div class="resume__item-title title title_fz14">Front-End Developer</div>
-                                        <div class="resume__item-subtitle"> EPAM | Москва (20xx-20x)</div>
+                                        <div class="resume__item-subtitle"> EPAM | Москва (20xx-20xx)</div>
                                     </div>
                                 </div>
                                 <div class="resume__item-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste aut natus
@@ -276,7 +276,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <h2 class="title__section-title title title_fz16">Навыки</h2>
             <div class="title__section-subtitle title">Что я использую в работе</div>
@@ -396,7 +396,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title__section-subtitle">Мои работы</div>
@@ -424,7 +424,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
         <div class="container">
             <h2 class="title__section-title title title_fz16">Прайс-лист</h2>
             <div class="divider"></div>
@@ -475,7 +475,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -541,6 +541,15 @@
             </div>
         </div>
     </section>
+
+    <div id="thanks" class="overlay">
+        <div class="modal">
+            <div class="modal__close">&times;</div>
+            <div class="modal__text">
+                <div class="modal__title title title_fz20">Спасибо за ваше сообщение!</div>
+                <div class="modal__subtitle title title_fz16">В ближайшее время я с вами свяжусь для уточнения деталей!</div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
